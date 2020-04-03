@@ -44,8 +44,8 @@ public class AlertScreentshot {
 
 	public static void NormalScreenshot(WebDriver driver) throws IOException {
 			
-		 Date date = new Date(); SimpleDateFormat dateformat = new
-		 SimpleDateFormat("yyyy-MM-dd HH-mm-ss"); 
+		 Date date = new Date(); 
+		 SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss"); 
 		 TakesScreenshot tss =  (TakesScreenshot) driver; File file = tss.getScreenshotAs(OutputType.FILE);
 		 //In order to use the FileUtils, we need to import common.io jar
 		 FileUtils.copyFile(file, new File("C:\\Users\\ELCOT\\eclipse-workspace\\quarentine\\screenshots\\" 
